@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Lab01.Ex03.WebMVCR1", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Lab02.Ex01.WebMVCR1", "MVC.Lab02.Ex01.WebMVCR1\MVC.Lab02.Ex01.WebMVCR1.csproj", "{C2C7B54E-20C6-4A8A-A93A-127430DE1580}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Lab02.Ex02.WebMVCR1", "MVC.Lab02.Ex02.WebMVCR1\MVC.Lab02.Ex02.WebMVCR1.csproj", "{4CD77F37-C229-4A83-BB97-ABF5E163E7D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{C2C7B54E-20C6-4A8A-A93A-127430DE1580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2C7B54E-20C6-4A8A-A93A-127430DE1580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2C7B54E-20C6-4A8A-A93A-127430DE1580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CD77F37-C229-4A83-BB97-ABF5E163E7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CD77F37-C229-4A83-BB97-ABF5E163E7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CD77F37-C229-4A83-BB97-ABF5E163E7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CD77F37-C229-4A83-BB97-ABF5E163E7D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
