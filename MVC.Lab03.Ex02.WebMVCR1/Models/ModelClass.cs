@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MVC.Lab03.Ex01.WebMVCR1.Models
+namespace MVC.Lab03.Ex02.WebMVCR1.Models
 {
     public class ModelClass
     {

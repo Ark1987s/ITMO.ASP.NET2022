@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Lab02.Ex05.WebMVCR1", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Lab03.Ex01.WebMVCR1", "MVC.Lab03.Ex01.WebMVCR1\MVC.Lab03.Ex01.WebMVCR1.csproj", "{5D9B1BEA-1552-4489-8547-AFC3B62DF3E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Lab03.Ex02.WebMVCR1", "MVC.Lab03.Ex02.WebMVCR1\MVC.Lab03.Ex02.WebMVCR1.csproj", "{9CD2AB0F-2037-4A19-8AC0-405441C1D816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{5D9B1BEA-1552-4489-8547-AFC3B62DF3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D9B1BEA-1552-4489-8547-AFC3B62DF3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D9B1BEA-1552-4489-8547-AFC3B62DF3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD2AB0F-2037-4A19-8AC0-405441C1D816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD2AB0F-2037-4A19-8AC0-405441C1D816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD2AB0F-2037-4A19-8AC0-405441C1D816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD2AB0F-2037-4A19-8AC0-405441C1D816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

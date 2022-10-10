@@ -1,17 +1,28 @@
-﻿using MVC.Lab03.Ex01.WebMVCR1.Models;
+﻿using MVC.Lab03.Ex02.WebMVCR1.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
-using static MVC.Lab03.Ex01.WebMVCR1.Models.StudyCsharp;
+using static MVC.Lab03.Ex02.WebMVCR1.Models.StudyCsharp;
 
-namespace MVC.Lab03.Ex01.WebMVCR1.Controllers
+
+namespace MVC.Lab03.Ex02.WebMVCR1.Controllers
 {
     public class MyController : Controller
     {
         // GET: Home
+        [HttpGet]
+        public ViewResult InputData()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ViewResult InputData(Person p)
+        {
+            return View("Hello", p);
+        }
         public ViewResult Index()
         {
             int hour = DateTime.Now.Hour; 
@@ -19,7 +30,11 @@ namespace MVC.Lab03.Ex01.WebMVCR1.Controllers
             ViewData["Mes"] = "хорошего настроения"; 
             return View(); 
         }
-        /* public string Index(string hel)
+        /*public ViewResult InputData()
+        {
+            return View();
+        }
+         public string Index(string hel)
          {
              int hour = DateTime.Now.Hour;
              string Greeting = ModelClass.ModelHello() + ", " + hel;

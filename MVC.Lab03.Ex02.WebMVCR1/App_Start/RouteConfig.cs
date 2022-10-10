@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace MVC.Lab03.Ex01.WebMVCR1
+namespace MVC.Lab03.Ex02.WebMVCR1
 {
     public class RouteConfig
     {
