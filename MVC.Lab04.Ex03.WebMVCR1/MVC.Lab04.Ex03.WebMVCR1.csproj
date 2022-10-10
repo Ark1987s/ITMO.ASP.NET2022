@@ -7,16 +7,16 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B2990286-CE26-475A-9861-0A79C30873E7}</ProjectGuid>
+    <ProjectGuid>{B7634316-71CD-463A-B6B6-3685A0F9E351}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MVC.Lab04.Ex02.WebMVCR1</RootNamespace>
-    <AssemblyName>MVC.Lab04.Ex02.WebMVCR1</AssemblyName>
+    <RootNamespace>MVC.Lab04.Ex03.WebMVCR1</RootNamespace>
+    <AssemblyName>MVC.Lab04.Ex03.WebMVCR1</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort>44304</IISExpressSSLPort>
+    <IISExpressSSLPort>44305</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -106,11 +106,11 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <None Include="packages.config" />
+    <Content Include="Views\_BasicLayout.cshtml" />
     <Content Include="Views\My\Hello.cshtml" />
     <Content Include="Views\My\Index.cshtml" />
     <Content Include="Views\My\InputData.cshtml" />
     <Content Include="Views\My\ListPerson.cshtml" />
-    <Content Include="Views\_BasicLayout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -136,9 +136,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51068</DevelopmentServerPort>
+          <DevelopmentServerPort>57642</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://localhost:44304/</IISUrl>
+          <IISUrl>https://localhost:44305/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
