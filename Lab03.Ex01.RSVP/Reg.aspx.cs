@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Lab04.Ex01.RSVP
+namespace Lab03.Ex01.RSVP
 {
     public partial class Reg : System.Web.UI.Page
     {

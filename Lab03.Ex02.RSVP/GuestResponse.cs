@@ -5,7 +5,7 @@ using System.Security.Policy;
 using System.Web;
 using System.Xml.Linq;
 
-namespace Lab04.Ex01.RSVP
+namespace Lab03.Ex02.RSVP
 {
     
     public class GuestResponse

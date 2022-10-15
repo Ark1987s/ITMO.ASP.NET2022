@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Lab04.Ex01.RSVP
+namespace Lab03.Ex01.RSVP
 {
     public class ResponseRepository
     {
