@@ -25,7 +25,7 @@
                             {
                                 string htmlString = String.Format("<tr><td>{0}</td><td>{1}</td><td>{2}</td><td>{3}</td>", rsvp.Name, rsvp.Email, rsvp.Phone, rsvp.Rdata);
                                 Response.Write(htmlString);
-                            } %>
+                            }%>
                 </tbody>
             </table>
         </div>
