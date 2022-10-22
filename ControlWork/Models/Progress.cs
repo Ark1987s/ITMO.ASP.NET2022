@@ -14,4 +14,8 @@ namespace ControlWork.Models
         public int Physics { get; set; }
         public int History { get; set; }
     }
+    public class ProgressContext : DbContext
+    {
+        public DbSet<Progress> Progresses { get; set; }
+    }
 }

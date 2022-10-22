@@ -22,7 +22,9 @@ namespace ControlWork.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddStudent([Bind(Include = "Student, Maths, Physics, History")] Progress progress)
+
+        public ActionResult AddStudent([Bind(Include = "Student, Maths, Physics, History")] Progress progress)      
+
         {
             db.Entry(progress).State = System.Data.Entity.EntityState.Added;
             db.SaveChanges();
