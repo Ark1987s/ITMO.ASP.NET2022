@@ -36,9 +36,9 @@ namespace ControlWork.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddStudent(Progress Student)
+        public ActionResult AddStudent([Bind(Include = "Student, Maths, Physics, History")] Progress progress)
         {
-            db.Entry(Student).State = System.Data.Entity.EntityState.Added;
+            db.Entry(progress).State = System.Data.Entity.EntityState.Added;
             db.SaveChanges();
 
             return RedirectToAction("Index");
