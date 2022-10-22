@@ -6,8 +6,8 @@ using System.Web;
 
 namespace ControlWork.Models
 {
-    public class ProgressContext: DbContext
+    public class ProgressContext : DbContext
     {
-        public DbSet<Progress> Progresss { get; set; }
+        public DbSet<Progress> Progresses { get; set; }
     }
 }

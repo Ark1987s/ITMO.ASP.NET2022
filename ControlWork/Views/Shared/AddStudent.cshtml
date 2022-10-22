@@ -1,0 +1,32 @@
+﻿@model  ControlWork.Models.Progress
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add student</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.Student, "Student")
+    <br />
+    @Html.EditorFor(model => model.Student)
+    <br />
+    <br />
+    @Html.LabelFor(model => model.Maths, "Maths")
+    <br />
+    @Html.EditorFor(model => model.Maths)
+    <br />
+    <br />
+    @Html.LabelFor(model => model.Physics, "Physics")
+    <br />
+    @Html.EditorFor(model => model.Physics)
+    <br />
+    <br />
+    @Html.LabelFor(model => model.History, "History")
+    <br />
+    @Html.EditorFor(model => model.History)
+    <br />
+    <br />
+    <input type="submit" value="Send" />
+}

@@ -9,57 +9,45 @@ namespace ControlWork.Controllers
 {
     public class HomeController : Controller
     {
+        ProgressContext db = new ProgressContext();
         public ActionResult Index()
         {
-            return View();
+            return View(db.Progresses);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
+        /*        public ActionResult About()
+                {
+                    ViewBag.Message = "Your application description page.";
 
-            return View();
-        }
+                    return View();
+                }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+                public ActionResult Contact()
+                {
+                    ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
-        ProgressContext db = new ProgressContext();
-        private void Study()
-        {
-            var study = db.Progresss.ToList<Progress>();
-            ViewBag.Study = study;
-        }
+                    return View();
+                }*/
+
         [HttpGet]
-        public ActionResult Data()
+        public ActionResult AddStudent()
         {
-            Study();
-
             return View();
-        }
-
-        public ActionResult Form()
-        {
-            Study();
-
-            return View("Form");
         }
 
         [HttpPost]
-        public ActionResult Data(Progress newProgress)
+        public ActionResult AddStudent(Progress Student)
         {
-            if (!ModelState.IsValid)
-            {
-                return View();
-            }
-            db.Progresss.Add(newProgress);
-
+            db.Entry(Student).State = System.Data.Entity.EntityState.Added;
             db.SaveChanges();
 
-            return View();
+            return RedirectToAction("Index");
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            db.Dispose();
+            base.Dispose(disposing);
         }
     }
 }
