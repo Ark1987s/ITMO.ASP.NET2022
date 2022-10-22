@@ -1,6 +1,7 @@
 ﻿using ControlWork.Models;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -21,15 +22,17 @@ namespace ControlWork.Controllers
             return View();
         }
 
-        [HttpPost]
-
-        public ActionResult AddStudent([Bind(Include = "Student, Maths, Physics, History")] Progress progress)      
-
+        [HttpPost]       
+        public ActionResult AddStudent([Bind(Include = "Student, Maths, Physics, History")] Progress progress)
         {
-            db.Entry(progress).State = System.Data.Entity.EntityState.Added;
-            db.SaveChanges();
-
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                db.Entry(progress).State = System.Data.Entity.EntityState.Added;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(progress);
+        
         }
 
         protected override void Dispose(bool disposing)
