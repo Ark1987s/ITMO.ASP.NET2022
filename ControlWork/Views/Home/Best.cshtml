@@ -1,0 +1,19 @@
+﻿@model ControlWork.Models.Progress
+
+@{
+Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>The best students</h1>
+
+<div>
+    <table>
+        @foreach (var item in ViewBag.Best)
+        {
+            <tr>
+                <td><p style="margin-left: 20px">@item</p></td>
+            </tr>
+        }
+    </table>
+    <p>@Html.ActionLink("Main", "Index")</p>
+</div>

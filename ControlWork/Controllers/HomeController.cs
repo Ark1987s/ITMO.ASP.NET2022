@@ -41,6 +41,30 @@ namespace ControlWork.Controllers
             return View(progress);        
         }
 
+        public ActionResult Best()
+        {
+            var best = (from score in db.Progresses
+                        
+                        orderby (score.Maths + score.Physics + score.History) descending
+                        
+                        select score.Student).Take(5);
+
+            ViewBag.Best = best;
+            return View("Best");
+        }
+
+        public ActionResult Fail()
+        {
+            var fail = (from score in db.Progresses
+
+                        orderby (score.Maths+score.Physics+score.History) ascending
+
+                        select score.Student).Take(5);
+
+            ViewBag.Fail = fail;
+            return View("Fail");
+        }
+
         protected override void Dispose(bool disposing)
         {
             db.Dispose();
