@@ -9,7 +9,7 @@ using System.Web.Mvc;
 namespace ControlWork.Controllers
 {
     public class HomeController : Controller
-    {
+    {        
         ProgressContext db = new ProgressContext();
         public ActionResult Index()
         {
@@ -24,15 +24,21 @@ namespace ControlWork.Controllers
 
         [HttpPost]       
         public ActionResult AddStudent([Bind(Include = "Student, Maths, Physics, History")] Progress progress)
-        {
-            if (ModelState.IsValid)
+        {                               
+            try
             {
-                db.Entry(progress).State = System.Data.Entity.EntityState.Added;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (ModelState.IsValid)
+                {
+                    db.Entry(progress).State = System.Data.Entity.EntityState.Added;
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
             }
-            return View(progress);
-        
+            catch (DataException)
+            {
+                ModelState.AddModelError(" ", "Unable to save changes!");
+            }
+            return View(progress);        
         }
 
         protected override void Dispose(bool disposing)
