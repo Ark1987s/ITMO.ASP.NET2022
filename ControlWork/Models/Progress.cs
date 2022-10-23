@@ -30,7 +30,17 @@ namespace ControlWork.Models
         [Display(Name = "grade")]
         [Required]
         [Range(1, 10)]
-        public int History { get; set; }        
+        public int History { get; set; }       
+        
+        public virtual int Score
+        {
+            get
+            {
+                int score = Maths + Physics + History;
+                return score;
+            }
+            set { }
+        }
     }
     public class ProgressContext : DbContext
     {

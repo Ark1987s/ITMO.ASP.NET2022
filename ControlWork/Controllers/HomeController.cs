@@ -13,7 +13,7 @@ namespace ControlWork.Controllers
         ProgressContext db = new ProgressContext();
         public ActionResult Index()
         {
-            return View(db.Progresses);
+            return View(db.Progresses.ToList());
         }
 
         [HttpGet]

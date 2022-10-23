@@ -13,6 +13,7 @@
             <td><p style="margin-left: 20px">Maths</p></td>
             <td><p style="margin-left: 20px">Physics</p></td>
             <td><p style="margin-left: 20px">History</p></td>
+            <td><p style="margin-left: 20px">Score</p></td>
         </tr>
         @foreach (ControlWork.Models.Progress item in Model)
         {
@@ -22,6 +23,7 @@
                 <td><p style="margin-left: 20px">@item.Maths</p></td>
                 <td><p style="margin-left: 20px">@item.Physics</p></td>
                 <td><p style="margin-left: 20px">@item.History</p></td>
+                <td><p style="margin-left: 20px">@item.Score</p></td>
             </tr>
         }
     </table>
